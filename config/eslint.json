@@ -1,0 +1,9 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js"
+  ],
+  "rules": {}
+}

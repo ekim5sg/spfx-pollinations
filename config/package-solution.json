@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "pollinations-spfx-lab-client-side-solution",
+    "id": "adeeb747-3dab-406e-8d96-ad6eb2b8dd9c",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.16.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "pollinations-spfx-lab description"
+      },
+      "longDescription": {
+        "default": "pollinations-spfx-lab description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "pollinations-spfx-lab Feature",
+        "description": "The feature that activates elements of the pollinations-spfx-lab solution.",
+        "id": "7ed87998-6c70-4815-96a6-ff07c21c78a5",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/pollinations-spfx-lab.sppkg"
+  }
+}

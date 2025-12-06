@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "16.20.2",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.4.1"
+    },
+    "version": "1.16.1",
+    "libraryName": "pollinations-spfx-lab",
+    "libraryId": "adeeb747-3dab-406e-8d96-ad6eb2b8dd9c",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "pollinations-spfx-lab",
+    "solutionShortDescription": "pollinations-spfx-lab description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

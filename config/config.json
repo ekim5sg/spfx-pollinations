@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "pollinations-image-lab-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/pollinationsImageLab/PollinationsImageLabWebPart.js",
+          "manifest": "./src/webparts/pollinationsImageLab/PollinationsImageLabWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "PollinationsImageLabWebPartStrings": "lib/webparts/pollinationsImageLab/loc/{locale}.js"
+  }
+}

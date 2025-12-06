@@ -1,0 +1,276 @@
+// src/webparts/pollinationsImageLab/components/PollinationsImageLab.module.scss
+
+.pollinationsImageLab {
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+}
+
+/* Theme base (Teal) */
+.themeTeal {
+  --bg-main: #f3fbfb;
+  --card-bg: #ffffff;
+  --accent: #4fb9b8;
+  --accent-hover: #3aa3a2;
+  --accent-outline: #9bdfe0;
+  --text-main: #333333;
+  --status-bg: #e2f7f7;
+  --preview-bg: #f3fafa;
+  --header-bg: #4fb9b8;
+  --header-fg: #ffffff;
+  --shadow-bg: #cdeaea;
+  --secondary-bg: #d6f3f3;
+  --secondary-active: #bfe8e8;
+  --prompt-bg: #f8ffff;
+}
+
+/* Lilac theme overrides */
+.themeLilac {
+  --bg-main: #fdf6ff;
+  --card-bg: #ffffff;
+  --accent: #c48ad9;
+  --accent-hover: #ab6ac4;
+  --accent-outline: #e1c7f2;
+  --text-main: #333333;
+  --status-bg: #f6e9ff;
+  --preview-bg: #f9f4ff;
+  --header-bg: #c48ad9;
+  --header-fg: #ffffff;
+  --shadow-bg: #e4d4f3;
+  --secondary-bg: #efe3ff;
+  --secondary-active: #e0ccff;
+  --prompt-bg: #fdf5ff;
+}
+
+/* Dark theme overrides */
+.themeDark {
+  --bg-main: #1e1e1e;
+  --card-bg: #262626;
+  --accent: #4fb9b8;
+  --accent-hover: #3aa3a2;
+  --accent-outline: #4fb9b8;
+  --text-main: #f5f5f5;
+  --status-bg: #2f2f2f;
+  --preview-bg: #1c2626;
+  --header-bg: #111111;
+  --header-fg: #f5f5f5;
+  --shadow-bg: #141414;
+  --secondary-bg: #333333;
+  --secondary-active: #3f3f3f;
+  --prompt-bg: #2a2a2a;
+}
+
+.appInner {
+  background-color: var(--bg-main);
+  padding: 8px 0;
+}
+
+.headerBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--header-bg);
+  color: var(--header-fg);
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+.headerTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+
+  select {
+    border-radius: 6px;
+    border: none;
+    padding: 4px 8px;
+    font-size: 0.85rem;
+  }
+}
+
+.shadowFrame {
+  margin-top: 12px;
+  background: var(--shadow-bg);
+  border-radius: 14px;
+  padding: 2px;
+}
+
+.card {
+  border-radius: 12px;
+  background: var(--card-bg);
+  padding: 16px 18px 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: var(--text-main);
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-bottom: 18px;
+  color: var(--text-main);
+}
+
+.sectionLabel {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--text-main);
+}
+
+.promptTextarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid var(--accent-outline);
+  background: var(--prompt-bg);
+  color: var(--text-main);
+  font-size: 0.95rem;
+  resize: vertical;
+}
+
+.promptTextarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.optionsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  margin-top: 12px;
+  align-items: center;
+}
+
+.optionGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 0.85rem;
+  color: var(--text-main);
+
+  input,
+  select {
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: 1px solid var(--accent-outline);
+    font-size: 0.85rem;
+    min-width: 80px;
+  }
+}
+
+.buttonsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+  align-items: center;
+}
+
+.btn {
+  border-radius: 999px;
+  border: none;
+  font-size: 0.9rem;
+  padding: 8px 14px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.15s ease, transform 0.05s ease;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btnAccent {
+  background: var(--accent);
+  color: var(--text-main);
+}
+
+.btnAccent:hover {
+  background: var(--accent-hover);
+}
+
+.btnSecondary {
+  @extend .btn;
+  background: var(--secondary-bg);
+  color: var(--text-main);
+
+  &:hover {
+    background: var(--secondary-active);
+  }
+}
+
+.btnDisabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.statusBar {
+  margin-top: 12px;
+  padding: 8px 10px;
+  background: var(--status-bg);
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: var(--text-main);
+}
+
+.errorText {
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: #c62828;
+}
+
+.previewSectionTitle {
+  margin-top: 14px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.previewCard {
+  margin-top: 6px;
+  padding: 8px;
+  border-radius: 10px;
+  background: var(--preview-bg);
+  border: 1px solid var(--accent-outline);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 220px;
+}
+
+.previewPlaceholder {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  text-align: center;
+  color: var(--text-main);
+}
+
+.previewImage {
+  max-width: 100%;
+  max-height: 320px;
+  border-radius: 8px;
+  display: block;
+}
+
+.footerHint {
+  margin-top: 6px;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  color: var(--text-main);
+}
